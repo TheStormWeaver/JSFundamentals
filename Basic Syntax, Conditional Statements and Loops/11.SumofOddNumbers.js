@@ -1,8 +1,6 @@
 function solve(n) {
   sum = 0;
-  timer = n;
     for (i = 1; i <= n; i++) {
-      timer++;
       if (i % 2 == 0) {
         continue;
       } else {
