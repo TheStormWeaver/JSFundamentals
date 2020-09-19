@@ -1,2 +1,2 @@
 # JsFundamentals
-September  - December  Softuni JsAdvenced
+September  - December  Softuni JsFundamentals
