@@ -1,13 +1,10 @@
 function solve(n) {
   let sum = 0;
-    for (i = 1; i <= n; i++) {
-      if (i % 2 == 0) {
-        continue;
-      } else {
-        console.log(i);
-        sum += i;
-      }
-    }
-  console.log(sum);
+  for (let current = 1, count = 0; count < n; current += 2, count++) {
+    console.log(current)
+    sum+=current
   }
-  solve(3)
+  console.log(`Sum: ${sum}`)
+}
+solve(5);
+
