@@ -1,0 +1,29 @@
+body {
+  background-color: lightcyan;
+}
+#Dark {
+  font-size: 35px;
+  color: grey;
+  font-family: "Helvetica" sans-serif;
+}
+#Light {
+  color: whitesmoke;
+}
+.cyan {
+  color: cyan;
+}
+button {
+  text-transform: uppercase;
+  background-color: black;
+  color: cornsilk;
+  border: none;
+  padding: 6px;
+  border-radius: 4px;
+  letter-spacing: 1px;
+}
+button:hover {
+  background: grey;
+  border: solid black;
+  color: darkblue;
+  cursor: pointer;
+}
