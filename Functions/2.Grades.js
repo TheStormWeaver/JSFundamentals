@@ -11,4 +11,4 @@ function solve(grade) {
     console.log(`Excellent (${grade.toFixed(2)})`)
   }
 }
-solve(5.50);
+solve(4.50);
