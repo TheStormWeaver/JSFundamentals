@@ -37,4 +37,4 @@ function printCertificate(grade, nameArr) {
     }
   }
 }
-printCertificate(3, ["Jhon", "Smith"])
+printCertificate(5, ["Jhon", "Smith"])
