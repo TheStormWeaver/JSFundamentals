@@ -14,3 +14,4 @@ function loadingBar(n) {
     console.log(`Still loading...`)
   }
 }
+loadingBar(30)
