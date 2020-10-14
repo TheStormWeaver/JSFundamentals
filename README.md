@@ -1,2 +1,2 @@
 # JsFundamentals
-September  - December  Softuni JsFundamentals
+September  - December  Softuni JsFundamentals Course
