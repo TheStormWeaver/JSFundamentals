@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        let worker1 = new Worker('worker.js');
+        let worker2 = new Worker('worker.js');
+        worker1.onmessage = e => document.write(
+            "<p>Worker #1 received: <i>" + 
+            e.data + "</i></p>");
+        worker2.onmessage = e => document.write(
+            "<p>Worker #2 received: <i>" + 
+            e.data + "</i></p>");
+  </script>
+  <p>Starting...</p>
+</html>
