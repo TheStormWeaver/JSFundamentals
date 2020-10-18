@@ -19,6 +19,4 @@ function Train(arr) {
   return wagoncapacity.join(" ");
 }
 console.log(
-  Train(["32 54 21 12 4 0 23", "75", "Add 10", "Add 0", "30", "10", "75"])
-);
-
+  Train(["0 0 0 10 2 4", "10", "Add 10", "10", "10", "10", "8", "6"]));
