@@ -5,6 +5,7 @@ function DistinctArray(arr) {
       arr.splice(index,1)
     }
   }
-  console.log(arr);
+  console.log(arr.join(" "));
 }
 DistinctArray([7, 8, 9, 7, 2, 3, 4, 1, 2]);
+
