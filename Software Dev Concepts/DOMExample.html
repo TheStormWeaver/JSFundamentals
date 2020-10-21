@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <input type="text" id="firstNum" /> +
+    <input type="text" id="secondNum" /> = 
+    <input type="text" id="sum" />
+    <button id="calc">Calc</button>
+    <script>
+        document.getElementById("calc").onclick =
+            function() {
+                document.getElementById("sum").value =
+                    Number(document.getElementById("firstNum").value) +
+                    Number(document.getElementById("secondNum").value);
+            }
+    </script>
+  </body>
+</html>
