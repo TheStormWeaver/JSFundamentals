@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <header>
+      <a href="/">Home</a> |
+      <a href="/#/about">About</a> |
+      <a href="/#/contact">Contact</a>
+    </header>
+    <section id='home'><h1>Home</h1>Welcome to SoftUni.</section>
+    <section id='about'><h1>About</h1>Become a software engineer.</section>
+    <section id='contact'><h1>Contact</h1>Al. Malinov 78, Sofia</section>
+    <script src="https://unpkg.com/jquery@3.5.0/dist/jquery.js"></script>
+    <script src="https://unpkg.com/sammy@0.7.6/lib/sammy.js"></script>
+    <script>
+      $.sammy(function() {
+        this.get('/', function() { showView('home') });
+        this.get('/#/about', function() { showView('about') });
+        this.get('/#/contact', function() { showView('contact') });
+      }).run();
+
+      function showView(viewId) {
+        $('section').hide();
+        $('#' + viewId).show();
+      }
+    </script>
+  </body>
+</html>
