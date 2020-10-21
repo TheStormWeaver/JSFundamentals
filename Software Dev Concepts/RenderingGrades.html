@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script>
+      async function loadStudents() {
+        let response = await fetch('students.json');
+        let students = await response.json();
+        let studentsTemplate = Handlebars.compile(
+          document.getElementById("studentsTpl").innerHTML);
+        document.body.innerHTML = studentsTemplate(students);
+      }
+      loadStudents();
+    </script>
+
+    <script id="studentsTpl" type="text/x-handlebars-template">
+      <h1>Students ({{students.length}})</h1>
+      <ul>
+      {{#each students}}
+        <li>{{name}} (graduated {{year}})</li>
+      {{/each}}
+      </ul>
+    </script>
+  </body>
+</html>
