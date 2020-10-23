@@ -1,10 +1,8 @@
-function solve(arr) {
-  let lastindex = arr.length - 1
-  for (let i = 0; i < arr.length / 2; i++) {
-    let temp = arr[i]
-    arr[i] = arr[lastindex - i]
-    arr[lastindex - i] = temp
+function reverse(arr) {
+  let result = []
+  for (let i = arr.length - 1; i >= 0; i--) {
+    result.push(arr[i])
   }
-  console.log(arr.join(" "))
+  console.log(result.join(" "))
 }
-solve(["a","b","c","d","e"]);
+reverse(["a","b","c","d","e"]);
