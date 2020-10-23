@@ -1,11 +1,9 @@
 function solve(arr) {
   let sum = 0
   for (let i = 0; i < arr.length; i++) {
-    arr[i] = Number(arr[i])
-  }
-  for (let num of arr) {
-    if(num % 2 == 0){
-      sum += num
+    let element = Number(arr[i]);
+    if(element % 2 == 0){
+      sum += element
     }
   }
   console.log(sum)
