@@ -5,4 +5,6 @@ function convertToObject(json) {
     console.log(`${key}: ${parsedObj[key]}`)
   }
 }
-convertToObject({"name": "George", "age": 40, "town":"Sofia"});
+let input = {"name": "George", "age": 40, "town": "Sofia"}
+convertToObject(input);
+
