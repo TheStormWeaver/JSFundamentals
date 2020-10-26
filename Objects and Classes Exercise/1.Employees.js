@@ -12,7 +12,7 @@ function employees(arr) {
   });
 }
 employees([
-  "Silas Butler&#39",
+  "Silas Butler",
   "Adnaan Buckley",
   "Juan Peterson",
   "Brendan Villarreal",
