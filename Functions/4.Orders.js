@@ -1,7 +1,7 @@
 function solve(product, quantity) {
   let result = 0;
   for (let i = 0; i < quantity; i++) {
-    if (product == "coffe") {
+    if (product == "coffee") {
       result += 1.5;
     } else if (product == "water") {
       result += 1.0;
