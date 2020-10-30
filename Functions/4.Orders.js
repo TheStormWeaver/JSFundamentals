@@ -13,4 +13,4 @@ function solve(product, quantity) {
   }
   console.log(result)
 }
-solve("coffe", 2);
+solve("coffee", 2);
