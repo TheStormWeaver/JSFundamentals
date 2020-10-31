@@ -1,22 +1,16 @@
-function solve(input) {
-    input = input.map(Number);
-    let firstEmployeeRate = input.shift();
-    let secEmployeeRate = input.shift();
-    let thirdEmployeeRate = input.shift();
-
-    let allStudents = input.shift();
-    let hours = 0;
-
-    while (allStudents > 0) {
-        hours++;
-        if (hours % 4 === 0) {
-            continue;
-        }
-        allStudents -= firstEmployeeRate + secEmployeeRate + thirdEmployeeRate;
-
+function softuniReception(arr) {
+  let hours = 0
+  let firstEmployee = Number(arr.shift())
+  let secondEmployee = Number(arr.shift())
+  let thirdEmployee = Number(arr.shift())
+  let studentsCount = Number(arr.shift())
+  let workcap = firstEmployee + secondEmployee + thirdEmployee
+  for (let i = 0; i < studentsCount; i+= workcap) {
+    hours++
+    if(hours % 4 === 0){
+      hours++
     }
-
-    console.log(`Time needed: ${hours}h.`);
+  }
+  console.log(`Time needed: ${hours}h.`)
 }
-
-solve(['3','2','5','40']);
+softuniReception(['3','2','5','40']);
