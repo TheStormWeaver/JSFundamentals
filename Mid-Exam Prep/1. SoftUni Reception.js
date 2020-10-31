@@ -7,6 +7,9 @@ On the next line you will receive students count as a single integer.
 Every forth hour all of the employees have a break, so they don’t work for a hour. 
 This is the only break for the employees, because they don`t need rest, nor have a personal life. 
 Calculate the time needed to answer all the student's questions and print it in the following format: "Time needed: {time}h."
+•	On first three lines -  each employee efficiency -  integer in range [1 - 100]
+•	On the fourth line - students count – integer in range [0 – 10000]
+•	Input will always be valid and in the range specified
 */
 function softuniReception(arr) {
   let hours = 0;
