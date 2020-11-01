@@ -1,4 +1,4 @@
-function solve (input) {
+function computerStore (input) {
  
 let index = 0;
 let TotalPriceWithoutTaxes = 0;
@@ -30,3 +30,12 @@ while ((currentCommand !== "special") && (currentCommand !== "regular")) {
         console.log("Invalid order!")
     }
 }
+computerStore([
+'1050', 
+'200', 
+'450',
+'2', 
+'18.50', 
+'16.86', 
+'special'
+])
