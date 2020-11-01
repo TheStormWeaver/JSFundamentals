@@ -27,13 +27,13 @@ function lift(input) {
     element += numofpass;
     lift[i] = element;
   }
-  if (passengers == 0) {
-    console.log("The lift has empty spots!");
-    console.log(lift.join(" "))
+  if (passengers == 0 && lift[lift.length - 1] === 4) {
+    console.log(lift.join(" "));
   } else if (passengers > 0) {
     console.log(`There isn't enough space! ${passengers} people in a queue!`);
     console.log(lift.join(" "));
   } else {
+    console.log("The lift has empty spots!");
     console.log(lift.join(" "));
   }
 }
