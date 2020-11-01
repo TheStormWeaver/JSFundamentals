@@ -10,6 +10,13 @@ Calculate the time needed to answer all the student's questions and print it in 
 •	On first three lines -  each employee efficiency -  integer in range [1 - 100]
 •	On the fourth line - students count – integer in range [0 – 10000]
 •	Input will always be valid and in the range specified
+Input / Constraints
+•	On first three lines -  each employee efficiency -  integer in range [1 - 100]
+•	On the fourth line - students count – integer in range [0 – 10000]
+•	Input will always be valid and in the range specified
+Output
+•	Print a single line: "Time needed: {time}h."
+•	Allowed working time / memory: 100ms / 16MB
 */
 function softuniReception(arr) {
   let hours = 0;
