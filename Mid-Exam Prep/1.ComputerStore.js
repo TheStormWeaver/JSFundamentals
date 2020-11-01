@@ -8,7 +8,6 @@ If total price is equal to zero, you should print "Invalid order!" on the consol
 Input
 •	You will receive numbers representing prices (without tax) until command "special" or "regular":
 Output
-•	The receipt should be in the following format: 
 */
 function computerStore(input) {
   let sum = 0;
