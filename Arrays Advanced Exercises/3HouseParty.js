@@ -1,34 +1,26 @@
-function Party(arr) {
-  let listOfGuests = [];
-
-  for (let str of arr) {
-    let workArr = str.split(" "); // console.log(workArr);
-    let name = workArr[0]; // console.log(name);
-
-    if (workArr.length === 3) {
-      // Add person to list of guests
-      let isIncluded = listOfGuests.includes(name);
-
-      if (isIncluded) {
+function houseParty(arr) {
+  let guests = [];
+  for (let i = 0; i < arr.length; i++) {
+    let command = arr[i].split(" ");
+    let name = command[0];
+    let action = command[2];
+    if (action === "going!") {
+      if (guests.includes(name)) {
         console.log(`${name} is already in the list!`);
       } else {
-        listOfGuests.push(name);
+        guests.push(name);
       }
     } else {
-      // Remove person from list of guests
-      let indexOfPerson = listOfGuests.indexOf(name);
-
-      if (indexOfPerson !== -1) {
-        listOfGuests.splice(indexOfPerson, 1);
+      if (guests.includes(name)) {
+        guests = guests.filter((x) => x !== name);
       } else {
         console.log(`${name} is not in the list!`);
       }
     }
   }
-
-  console.log(listOfGuests.join(`\n`));
+  console.log(guests.join("\n"));
 }
-Party([
+houseParty([
   "Allie is going!",
   "George is going!",
   "John is not going!",
