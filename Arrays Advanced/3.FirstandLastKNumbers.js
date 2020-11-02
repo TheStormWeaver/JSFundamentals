@@ -1,7 +1,7 @@
 function firstlastk(arr) {
   let k = arr.shift()
   console.log(arr.slice(0, k).join(" "))
-  console.log(arr.slice(arr.length - k, k + 1).join(" "))
+  console.log(arr.slice(arr.length - k, arr.length).join(" "))
 }
-firstlastk([2, 7, 8, 9]);
+firstlastk([3, 7, 8, 9, 10, 20 ,30]);
 
