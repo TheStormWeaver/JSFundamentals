@@ -17,7 +17,6 @@ Input / Constraints
 You receive a string, representing the dungeons rooms, separated with '|' (vertical bar): "room1|room2|room3…".
 Output
 Print the corresponding messages, described above.
-
  */
 function muOnline(input) {
   let dungeon = input.toString().split("|");
