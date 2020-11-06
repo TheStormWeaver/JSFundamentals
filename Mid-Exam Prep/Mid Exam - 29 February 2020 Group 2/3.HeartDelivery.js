@@ -48,11 +48,11 @@ function heartDelivery(input) {
   }
 }
 heartDelivery([
-  "2@4@2@8@3",
+  "2@4@2",
   "Jump 2",
   "Jump 2",
   "Jump 8",
-  "Jump 0",
-  "Jump 100",
+  "Jump 3",
+  "Jump 1",
   "Love!",
 ]);
