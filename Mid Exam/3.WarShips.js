@@ -49,17 +49,20 @@ function warShips(input) {
       endindex = Number(endindex);
       damage = Number(damage);
       let part = pirateship[startindex];
-      let finalpart = pirateship[endindex]
-      if(pirateship.indexOf(part) != -1 && pirateship.indexOf(finalpart) != -1){
-      for (let j = startindex; j <= endindex; j++) {
-        pirateship[j] -= damage;
-        if (pirateship[j] <= 0) {
-          console.log(`You lost! The pirate ship has sunken.`);
-          isalive = false;
-          break;
+      let finalpart = pirateship[endindex];
+      if (
+        pirateship.indexOf(part) != -1 &&
+        pirateship.indexOf(finalpart) != -1
+      ) {
+        for (let j = startindex; j <= endindex; j++) {
+          pirateship[j] -= damage;
+          if (pirateship[j] <= 0) {
+            console.log(`You lost! The pirate ship has sunken.`);
+            isalive = false;
+            break;
+          }
         }
       }
-    }
     } else if (command == "Repair") {
       let [action, index, health] = line.split(" ");
       index = Number(index);
@@ -99,8 +102,8 @@ warShips([
   "6>7>8>9>10>11",
   "20",
   "Status",
-  "Fire 2 1",
+  "Fire 2 3",
   "Defend 0 4 11",
-  "Repair 3 4",
+  "Repair 3 18",
   "Retire",
 ]);
