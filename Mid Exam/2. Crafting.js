@@ -20,8 +20,10 @@ Output
  */
 function crafting(input) {
   let weaponname = input.shift().split("|");
-  let checkarr = []
-  let checked = false
+  let oddarr = []
+  let evenarr = []
+  let checkedodd = false
+  let checkeven = false
   for (const line of input) {
     let [command, action, amount] = line.split(" ");
     amount = Number(amount)
@@ -47,22 +49,25 @@ function crafting(input) {
       if(action == "Even"){
         for (let j = 0; j < weaponname.length; j++) {
           if(j % 2 == 0){
-            checkarr.push(weaponname[j])
-            checked = true
+            evenarr.push(weaponname[j])
+            checkeven = true
           }
         }
       }else{
         for (let j = 0; j < weaponname.length; j++) {
           if(j % 2 == 1){
-            checkarr.push(weaponname[j])
-            checked = true
+            oddarr.push(weaponname[j])
+            checkedodd = true
           }
         }
       }
     }
   }
-  if(checked){
-    console.log(checkarr.join(" "))
+  if(checkeven){
+    console.log(evenarr.join(" "))
+  }
+  if(checkedodd){
+    console.log(oddarr.join(" "))
   }
   console.log(`You crafted ${weaponname.join("")}!`);
 }
@@ -70,6 +75,7 @@ crafting(["ha|Do|mm|om|er",
 "Move Right 0",
 "Move Left 3",
 "Check Odd",
+"Check Even",
 "Move Left 2",
 "Move Left 10",
 "Move Left 0",
