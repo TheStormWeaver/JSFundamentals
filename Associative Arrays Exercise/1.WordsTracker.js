@@ -9,8 +9,8 @@ function wordsTracker(input) {
       wordsObj[word] += 1
     }
   }
-  let keysWords = Object.keys(wordsObj).sort((a, b) => wordsObj[b] - wordsObj[a])
-  for (const element of keysWords) {
+  let keyWords = Object.keys(wordsObj).sort((a, b) => wordsObj[b] - wordsObj[a])
+  for (const element of keyWords) {
     console.log(`${element} - ${wordsObj[element]}`)
   }
 }
