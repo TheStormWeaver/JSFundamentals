@@ -1,64 +1,62 @@
-function cardGame(data) {
-  let eachPlayer = data.shift();
-  let objCardPlayers = [];
-  let resultArray = [];
-  let cards = [];
-  let type = [];
-  let card = [];
-  let power = [];
-  while (eachPlayer !== undefined) {
-    let input = eachPlayer.split(": ");
-    let name = input[0];
-    cards = input[1].split(", ");
-    if (!objCardPlayers[name]) {
-      objCardPlayers[name] = cards.toString();
-    } else {
-      objCardPlayers[name] += "," + cards;
-    }
-    eachPlayer = data.shift();
-  }
-  for (const obj in objCardPlayers) {
-    let set = new Set(objCardPlayers[obj].split(","));
-    cards = Array.from(set);
-    objCardPlayers[obj] = cards;
-  }
-  for (const key in objCardPlayers) {
-    let sum = 0;
-    resultArray = objCardPlayers[key];
-    for (let i = 0; i < resultArray.length; i++) {
-      card = resultArray[i].split("");
-      type = card.pop();
-      for (const num of card) {
-        if (num === "J") {
-          power = 11;
-        } else if (num === "Q") {
-          power = 12;
-        } else if (num === "K") {
-          power = 13;
-        } else if (num === "A") {
-          power = 14;
+function cardGame(input) {
+      let obj = {};
+    for (let line of input) {
+        let [name, cards] = line.split(": ");
+        cards = cards.split(", ");
+        if (!obj.hasOwnProperty(name)) {
+            let uniq = Array.from(new Set(cards));
+            obj[name] = uniq;
         } else {
-          power += num;
+            let concated = obj[name].concat(cards);
+            let uniq = Array.from(new Set(concated));
+            obj[name] = uniq;
         }
-      }
-      switch (type) {
-        case "S":
-          sum += Number(power) * 4;
-          break;
-        case "H":
-          sum += Number(power) * 3;
-          break;
-        case "D":
-          sum += Number(power) * 2;
-          break;
-        case "C":
-          sum += Number(power) * 1;
-          break;
-      }
-      power = "";
+
     }
-    console.log(`${key}: ${sum}`);
-  }
+    for (let key in obj) {
+        let value = 0;
+        for (let card of obj[key]) {     // goes through person's cards
+            card = card.split("");
+            let type = card.pop();
+            let power = card.join("");
+            switch (power) {
+                case "J":
+                    power = 11;
+                    break;
+                case "Q":
+                    power = 12;
+                    break;
+                case "K":
+                    power = 13;
+                    break;
+                case "A":
+                    power = 14;
+                    break;
+                default:
+                    power = Number(power);
+            }
+            switch (type) {
+                case "S":
+                    type = 4;
+                    break;
+                case "H":
+                    type = 3;
+                    break;
+                case "D":
+                    type = 2;
+                    break;
+                case "C":
+                    type = 1;
+                    break;
+            }
+            value += (power * type);
+        }
+        obj[key].value = value;
+    }
+    for (let key in obj) {
+        console.log(`${key}: ${obj[key].value}`);
+    }
+    console.log(obj);
 }
 cardGame([
   "Peter: 2C, 4H, 9H, AS, QS",
