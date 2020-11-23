@@ -6,7 +6,6 @@ function solve(arr) {
       .split(", ")
       .sort((a, b) => a.localeCompare(b))
       .join(", ");
-
     let heroObject = {
       Hero: hero,
       level: Number(level),
