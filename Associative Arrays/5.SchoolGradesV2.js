@@ -1,3 +1,7 @@
+/*
+Write a function to store students with all of their grades. If a student appears more than once, add the new grades.
+At the end print the students sorted by average grade. The input comes as array of strings.
+*/
 function schoolGrades(input) {
   let students = {};
   for (const line of input) {
