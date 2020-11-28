@@ -1,4 +1,5 @@
-function matchName(input) {
+function matchName(text) {
+    let [input] = text 
     let pattern = /\b[A-Z][a-z]+[ ][A-Z][a-z]+\b/g;
     let validNames = [];
     let validName = pattern.exec(input)
