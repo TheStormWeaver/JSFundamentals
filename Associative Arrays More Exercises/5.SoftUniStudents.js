@@ -35,8 +35,17 @@ function softuniStudents(arr) {
       }
     }
   }
-  console.log(list)
+  
   let sorted = Object.entries(list).sort((a, b) => a[1] - b[1])
+  for (const line of sorted) {
+    console.log(`${line[0]}: ${list[line[0]].capacity} places left`)
+    let result = Object.entries(line[1])
+    for (const part of result) {
+      if(part[0] != "capacity"){
+      console.log(`--- ${Object.values(part[1])[1]}: ${part[0]}, ${Object.values(part[1])[0]} `)
+      }
+    }
+  }
 }
 softuniStudents([
   "JavaBasics: 2",
