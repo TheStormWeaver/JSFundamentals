@@ -36,10 +36,14 @@ function softuniStudents(arr) {
     }
   }
   
-  let sorted = Object.entries(list).sort((a, b) => a[1] - b[1])
+  let sorted = Object.entries(list).sort((a, b) => list[a[0]].capacity - list[b[0]].capacity)
   for (const line of sorted) {
     console.log(`${line[0]}: ${list[line[0]].capacity} places left`)
-    let result = Object.entries(line[1])
+    let result = Object.entries(line[1]).sort((a, b) => {
+      if(a[0] != "capacity" && a[1] != "capacity" && b[0] != "capacity" && b[1] != "capacity"){
+       return b[1].credits - a[1].credits
+      }
+    })
     for (const part of result) {
       if(part[0] != "capacity"){
       console.log(`--- ${Object.values(part[1])[1]}: ${part[0]}, ${Object.values(part[1])[0]} `)
