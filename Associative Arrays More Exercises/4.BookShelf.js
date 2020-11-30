@@ -1,3 +1,15 @@
+/*
+Write a function that stores information about shelfs and the books in the shelfs. Each shelf has an Id and a genre of books that can be in it. Each book has a title, an author and genre. The input comes as an array of strings. They will be in the format:
+"{shelf id} -> {shelf genre}" – create a shelf if the id is not taken.
+"{book title}: {book author}, {book genre}" – if a shelf with that genre exists, add the book to the shelf
+After finished reding input, sort the shelfs by count of books in it in descending. For each shelf sort the books by title in ascending. Then print them in the following format
+"{shelfOne id} {shelf genre}: {books count}
+--> {bookOne title}: {bookOne author}
+--> {bookTwo title}: {bookTwo author}
+…
+{shelfTwo id} {shelf genre}: {books count}
+…"
+*/
 function bookShelf(arr) {
   let shelf = {}
   for (const line of arr) {
