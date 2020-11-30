@@ -14,18 +14,24 @@ function softuniStudents(arr) {
     if(line.includes(":")){
       let [course, amount] = line.split(": ")
       if(!list.hasOwnProperty(course)){
-        list[course] = {}
-        list[course].capacity = Number(amount)
-        list[course].student = []
+        list[course] = {
+          capacity : Number(amount),
+        }
       }else{
       list[course].capacity += Number(amount)
       }
     }else if(line.includes("with email")){
-      let [name, parts] = line.split(" with email ")
+      let [studentname, parts] = line.split(" with email ")
       let [email, course] = parts.split(" joins ")
+      let [name, credits] = studentname.split("[")
+      credits = credits.split("")
+      credits.pop()
+      credits = Number(credits.join(""))
       if(list.hasOwnProperty(course) && list[course].capacity - 1 > -1){
         list[course].capacity -= 1
-        list[course].student.push(name, email)
+        list[course][name] = {}
+        list[course][name].email = email
+        list[course][name].credits = credits
       }
     }
   }
