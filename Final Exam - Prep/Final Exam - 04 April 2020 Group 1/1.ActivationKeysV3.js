@@ -15,7 +15,7 @@ function activationKeys(input) {
       let third = key.substring(end);
       if (mode == "Upper") {
         second = second.toUpperCase();
-      } else if (mode == "Lowercase") {
+      } else if (mode == "Lower") {
         second = second.toLowerCase();
       }
       let result = first + second + third;
