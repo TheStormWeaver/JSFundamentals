@@ -1,4 +1,4 @@
-*\
+/*
 You are about to make some good money, but first you need to think of a way to verify who paid for your product and who didn`t. You have decided to let people use the software for a free trial period and then require an activation key in order to continue to use the product. The last step before you could cash out is to design a program that creates unique activation keys for each user. So, waste no more time and start typing!
 The first line of the input will be your raw activation key. It will consist of letters and numbers only. 
 After that, until the "Generate" command is given, you will be receiving strings with instructions for different operations that need to be performed upon the raw activation key.
@@ -20,7 +20,7 @@ Input
 Output
 •	After the "Generate" command is received, print:
 o	"Your activation key is: {activation key}"
-\*
+*/
 function activationKeys(arr) {
   let key = arr.shift()
   let isGenerate = false
