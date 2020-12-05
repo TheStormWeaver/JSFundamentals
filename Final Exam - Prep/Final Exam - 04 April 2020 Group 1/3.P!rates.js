@@ -31,7 +31,6 @@ Constraints
 •	The initial population and gold of the settlements will be valid, 32-bit integers, 
 will never be negative or exceed the respective limits.
 •	The town names in the events will always be valid towns that should be on your list.
-
 */
 function pirates(arr) {
   let cities = {};
