@@ -91,7 +91,7 @@ function needForSpeed(arr) {
     if(a[1].mileage - b[1].mileage != 0){
       return b[1].mileage - a[1].mileage
     }else{
-      return a[0].loacleCompare(b[0])
+      return a[0].localeCompare(b[0])
     }
   })
   for (const car of sorted) {
@@ -102,12 +102,12 @@ needForSpeed([
   "3",
   "Audi A6|38000|62",
   "Mercedes CLS|11000|35",
-  "Volkswagen Passat CC|45678|5",
-  "Drive : Audi A6 : 543 : 47",
-  "Drive : Mercedes CLS : 94 : 11",
-  "Drive : Volkswagen Passat CC : 69 : 8",
-  "Refuel : Audi A6 : 50",
-  "Revert : Mercedes CLS : 500",
-  "Revert : Audi A6 : 30000",
+  "Volkswagen Passat CC|45678|50",
+  "Drive : Audi A6 : 543 : 4700",
+  "Drive : Mercedes CLS : 94 : 1100",
+  "Drive : Volkswagen Passat CC : 69 : 80000",
+  "Refuel : Audi A6 : 5000000000000",
+  "Revert : Mercedes CLS : 50000000",
+  "Revert : Audi A6 : 30000000000000000000",
   "Stop",
 ]);
