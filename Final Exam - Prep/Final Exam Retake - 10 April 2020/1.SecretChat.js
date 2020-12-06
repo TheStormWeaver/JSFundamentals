@@ -74,4 +74,4 @@ secretChat([
   "InsertSpace:|:3",
   "InsertSpace:|:7",
   "Reveal",
-]);
+])
