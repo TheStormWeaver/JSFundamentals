@@ -115,5 +115,4 @@ heroesOfCodeAndLogic([
   'TakeDamage - Tyris - 99 - Fireball',
   'TakeDamage - Ivor - 30 - Mosquito',
   'End'
-]
-);
+]); //73
