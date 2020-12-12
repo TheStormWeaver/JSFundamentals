@@ -32,40 +32,40 @@ function worldTour(arr) {
   }
   function addStop(points, index, str) {
     index = Number(index);
-    if (index >= 0 && index < points.length) {
+    if (points.charCodeAt(index) != "") {
       let firstHalf = points.substring(0, index);
       let secondHalf = points.substring(index);
       let result = firstHalf + str + secondHalf;
       console.log(result);
       return result;
-    }else{
-      return points
+    } else {
+      return points;
     }
   }
   function removeStop(points, start, end) {
     start = Number(start);
     end = Number(end);
-    if((start >= 0 && start < points.length) && (end >= 0 && end < points.length)){
-      let firstHalf = points.substring(0, start)
-      let secondHalf = points.substring(end + 1)
-      let result = firstHalf + secondHalf
-      console.log(result)
-      return result
-    }else{
-      return points
+    if (points.charCodeAt(start) != "" && points.charCodeAt(end) != "") {
+      let firstHalf = points.substring(0, start);
+      let secondHalf = points.substring(end + 1);
+      let result = firstHalf + secondHalf;
+      console.log(result);
+      return result;
+    } else {
+      return points;
     }
   }
   function replace(points, str, replacement) {
-    if(points.includes(str)){
-      let regex = new RegExp(str, "g")
-      let result = points.replace(regex, replacement)
-      console.log(result)
-      return result
-    }else{
-      return points
+    if (points.includes(str)) {
+      let regex = new RegExp(str, "g");
+      let result = points.replace(regex, replacement);
+      console.log(result);
+      return result;
+    } else {
+      return points;
     }
   }
-  console.log(`Ready for world tour! Planned stops: ${travelPoints}`)
+  console.log(`Ready for world tour! Planned stops: ${travelPoints}`);
 }
 worldTour([
   "Hawai::Cyprys-Greece",
