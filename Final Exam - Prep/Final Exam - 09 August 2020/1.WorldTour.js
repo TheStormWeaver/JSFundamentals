@@ -20,7 +20,7 @@ function worldTour(arr) {
     if(line.includes("Add Stop")){
       let [command, index, str] = line.split(":")
       index = Number(index)
-      if(index >= 0 && index < travelPoints.length){
+      if(travelPoints.charCodeAt(index) != "){
         let firstHalf = travelPoints.substring(0, index)
         let secondHalf = travelPoints.substring(index)
         travelPoints = firstHalf + str + secondHalf
@@ -31,7 +31,7 @@ function worldTour(arr) {
       let [command, start, end] = line.split(":")
       start = Number(start)
       end = Number(end)
-      if(start >= 0 && start < travelPoints.length && end >= 0 && end < travelPoints.length){
+      if(travelPoints.charCodeAt(start) != "" && travelPoints.charCodeAt(end) != ""){
         let firstHalf = travelPoints.substring(0, start)
         let secondHalf = travelPoints.substring(end + 1)
         travelPoints = firstHalf + secondHalf
