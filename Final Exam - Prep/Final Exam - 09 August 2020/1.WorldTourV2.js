@@ -25,6 +25,8 @@ function worldTour(arr) {
       let result = firstHalf + str + secondHalf;
       console.log(result);
       return result;
+    }else{
+      return points
     }
   }
   function removeStop(points, start, end) {
@@ -36,6 +38,8 @@ function worldTour(arr) {
       let result = firstHalf + secondHalf
       console.log(result)
       return result
+    }else{
+      return points
     }
   }
   function replace(points, str, replacement) {
@@ -44,6 +48,8 @@ function worldTour(arr) {
       let result = points.replace(regex, replacement)
       console.log(result)
       return result
+    }else{
+      return points
     }
   }
   console.log(`Ready for world tour! Planned stops: ${travelPoints}`)
