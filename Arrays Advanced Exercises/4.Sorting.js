@@ -1,3 +1,7 @@
+/*
+Write a function that sorts an array of numbers so that the first element is the biggest one, the second is the smallest one, the third is the second biggest one, the fourth is the second smallest one and so on. 
+Print the elements on one row, separated by single space.
+*/
 function Sorting(arr) {
   let output = [];
   let inputSorted = arr.slice(0).sort((a, b) => b - a);
