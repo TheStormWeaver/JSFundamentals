@@ -1,3 +1,7 @@
+/*
+Write a function that finds the longest sequence of equal elements in an array of numbers.
+If several longest sequences exist, print the leftmost one.
+*/
 function solve(arr) {
   let result = []
   for (let i = 0; i < arr.length; i++) {
