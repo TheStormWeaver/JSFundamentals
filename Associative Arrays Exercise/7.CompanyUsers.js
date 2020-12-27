@@ -7,6 +7,9 @@ Print the company name and each employee's id in the following format:
 -- {id1}
 -- {id2}
 -- {idN}
+Input / Constraints
+•	The input come as array of strings, each in the format: "{companyName} -> {employeeId}".
+•	The input always will be valid.
 */
 function companyUsers(arr) {
   let companylist = {}
