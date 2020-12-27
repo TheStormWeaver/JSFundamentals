@@ -1,3 +1,9 @@
+/*
+Write a function that receives an array of words and finds occurrences of given words in that sentence.
+The input will come as array of strings. The first string will contain the words you will be looking for separated by a
+space. All strings after that will be the words you will be looking for.
+Print for each word how many times it occurs. The words should be sorted by count in descending.
+*/
 function wordsTracker(input) {
   let words = input.shift().split(" ")
   let wordsObj = {}
