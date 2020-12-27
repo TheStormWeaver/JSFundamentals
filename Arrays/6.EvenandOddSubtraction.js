@@ -1,3 +1,7 @@
+/*
+Write a program that calculates the difference between the sum of the even and the sum of the odd numbers in an
+array.
+*/
 function solve(arr) {
   let oddsum = 0
   let evensum = 0
