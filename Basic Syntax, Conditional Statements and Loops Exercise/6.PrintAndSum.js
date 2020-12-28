@@ -1,3 +1,7 @@
+/*
+Write a function to display numbers from given start to given end and their sum. The input comes as two number
+parameters.
+*/
 function solve(num1, num2) {
   let sum = 0
   let line = ""
