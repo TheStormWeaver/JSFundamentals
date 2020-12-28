@@ -1,3 +1,9 @@
+/*
+You are given a group of people, type of the group, and day of the week they are going to stay. Based on that
+information calculate how much they have to pay and print that price on the console. Use the table below. In each
+cell is the price for a single person. The output should look like that:
+"Total price: {price}." The price should be formatted to the second decimal point.
+*/
 function solve(numofppl, group, day) {
   let price = 0;
   if (group == "Students") {
