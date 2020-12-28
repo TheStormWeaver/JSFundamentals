@@ -1,3 +1,14 @@
+/*
+Write a function that determines whether based on the given age a person is: baby, child, teenager, adult, elder. The
+input comes as single number parameter. The bounders are:
+0-2 – baby;
+3-13 – child;
+14-19 – teenager;
+20-65 – adult;
+>=66 – elder;
+In all other cases - out of bounds
+All the values are inclusive.
+*/
 function solve(age) {
   if ((0 <= age) & (age <= 2)) {
     console.log("baby");
