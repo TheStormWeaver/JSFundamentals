@@ -26,6 +26,15 @@ Stone required – 36 x increment
 Marble required – 28 x increment
 Note the top-most layer is made entirely out of gold, with height equal to the given increment. See the examples for
 complete calculations.
+Input
+You will receive two number parameters base and increment.
+Output
+Print on the console on separate lines the total required amounts of each material rounded up and the final height
+of the pyramid rounded down, as shown in the examples.
+Constraints
+The base will always be an integer greater than zero
+The increment will always be a number greater than zero
+Number.MAX_SAFE_INTEGER will never be exceeded for any of the calculations
 */
 function solve(base,increment) {
   let stone = 0
