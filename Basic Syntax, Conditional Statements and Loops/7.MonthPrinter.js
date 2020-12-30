@@ -1,3 +1,7 @@
+/*
+Write a program, which takes an integer from the console and prints the corresponding month. If the number is
+more than 12 or less than 1 print "Error!"
+*/
 function solve(month) {
   switch (month) {
     case 1:
