@@ -1,3 +1,6 @@
+/*
+Write a function that receives a digit in the form of a word as string and prints the digit as a number.
+*/
 function Digits(num) {
   let finalsum;
   switch (num) {
