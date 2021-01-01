@@ -1,3 +1,6 @@
+/*
+Write a function which receives three integer numbers to print the smallest. Use appropriate name for the function.
+*/
 function SmallestofThree(numOne, numTwo, numThree) {
   let smallest = Number.MAX_SAFE_INTEGER;
    smallest = smaller(numOne, smallest)
