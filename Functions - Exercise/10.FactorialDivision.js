@@ -1,3 +1,7 @@
+/*
+Write a function that receives two integer numbers. Calculate factorial of each number. Divide the first result by the
+second and print the division formatted to the second decimal point.
+*/
 function factorialDivision(a, b) {
   let suma = 1
   let sumb = 1
