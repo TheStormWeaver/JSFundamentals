@@ -1,3 +1,6 @@
+/*
+Write a function that receives a single integer number n and prints nxn matrix with that number.
+*/
 function matrix(n) {
   for (let i = 0; i < n; i++) {   
     let row = ""
