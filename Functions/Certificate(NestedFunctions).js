@@ -1,3 +1,9 @@
+/*
+Write a function that receives a grade and an array, containing
+two strings and prints a formatted certificate
+
+If the student failed, print "<name> does not qualify"
+*/
 function printCertificate(grade, nameArr) {
   if (pass(grade)) {
     printHeader();
