@@ -1,3 +1,9 @@
+/*
+Write a function that receives three parameters and write an arrow function that calculate result depending of
+operator. Operator can be "multiply", "divide", "add", "subtract".
+Input
+The input comes as parameters named numOne, numTwo, operator.
+*/
 function solve(numOne, numTwo, operator) {
   let multiply = (numOne,numTwo) => numOne * numTwo 
   let divide = (numOne,numTwo) => numOne / numTwo 
