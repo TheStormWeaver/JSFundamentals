@@ -1,3 +1,9 @@
+/*
+Receive a single parameter – an object, containing five properties:
+{ name, area, population, country, postcode }
+Loop through all the keys and print them with their values in format: &quot;{key} -&gt; {value}&quot;
+See the examples below.
+*/
 function cityInfo(city) {
   let keys = Object.keys(city);
   for (const key of keys) {
