@@ -1,4 +1,4 @@
-/**
+/*
 /*
 Write a function that receives array of strings in the following format "{cat name} {age}".
 Create a Cat class that receives in the constructor the name and the age parsed from the input.
