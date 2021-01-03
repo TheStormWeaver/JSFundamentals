@@ -1,3 +1,7 @@
+/*
+Write a function that receives a string in JSON format and converts it to object.
+Loop through all the keys and print them with their values in format: &quot;{key}: {value}&quot;
+*/
 function convertToObject(json) {
   let stringify = JSON.stringify(json)
   let parsedObj = JSON.parse(stringify)
