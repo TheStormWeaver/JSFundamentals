@@ -6,7 +6,7 @@ It should also have a function named &quot;meow&quot; that will print "{cat name
 console.
 For each of the strings provided you must create a cat object.
 */
-*/
+
 function cats(catsAsStrings) {
   for (let catAsString of catsAsStrings) {
     let [name, age] = catAsString.split(" ");
