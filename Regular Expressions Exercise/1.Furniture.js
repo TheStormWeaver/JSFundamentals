@@ -8,7 +8,7 @@ end print the each bought furniture on separate line in the format:
 {1 st name}
 {2 nd name}
 …"
-And on the last line print the following: &quot;Total money spend: {spend money}&quot; formatted to the second decimal
+And on the last line print the following: "Total money spend: {spend money}" formatted to the second decimal
 point.
 */
 function furniture(arr) {
