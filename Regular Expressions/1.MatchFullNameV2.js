@@ -1,5 +1,4 @@
 /*
-/*
 Write a JavaScript function to match full names from a list of names and print them on the console.
 Writing the Regular Expression
 First, write a regular expression to match a valid full name, according to these conditions:
@@ -22,7 +21,6 @@ another character set and the correct quantifier.
 6. To prevent capturing of letters across new lines, put "\b" at the beginning and at the end of your regex.
 This will ensure that what precedes and what follows the match is a word boundary (like a new line).
 In order to check your RegEx, use these values for reference (paste all of them in the Test String field):
-*/
 */
 function matchName([text]) {
   let pattern = /\b[A-Z][a-z]+ [A-Z][a-z]+\b/g;
