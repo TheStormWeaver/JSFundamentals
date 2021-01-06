@@ -1,3 +1,6 @@
+/*
+Write a function that receives a text and a word to remove all occurrences of it inside the text.
+*/
 function matchPhone(word, text) {
   let current = "";
   let final = "";
