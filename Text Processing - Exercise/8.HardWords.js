@@ -1,3 +1,8 @@
+/*
+You will receive an array which holds string and another array. 
+The string is a letter from young boy who does not yet know some words and you have to help him. The letter has few holes, these holes are the words unknown to the boy and you must fill them with strings from the array you receive at the second index. 
+If a length of the hole is 4 you have to replace it with string with the same length and so on…
+*/
 function hardWords(input) {
   let words = input.pop();
   let text = input.shift().split(" ")
