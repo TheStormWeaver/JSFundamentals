@@ -30,9 +30,9 @@
 
 # Course Links
 
-[JS Fundamentals Course Link](https://softuni.bg/trainings/3133/js-fundamentals-september-2020)
+- [JS Fundamentals Course Link](https://softuni.bg/trainings/3133/js-fundamentals-september-2020)
 
-[Fundamentals Basic Overview Link](https://softuni.bg/trainings/3001/fundamentals-with-csharp-java-javascript-and-python-september-2020)
+- [Fundamentals Basic Overview Link](https://softuni.bg/trainings/3001/fundamentals-with-csharp-java-javascript-and-python-september-2020)
 
 <p align="center">
   <img src="https://img.shields.io/badge/Storm-Weaver-blue" alt="storm" width="10%">
