@@ -1,10 +1,10 @@
 <!--[![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-js.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/uses-html.svg)](https://forthebadge.com) [![forthebadge](https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg)](https://forthebadge.com)-->
 
 <p align="center">
+  <img src="https://forthebadge.com/images/badges/open-source.svg" alt="css">
   <img src="https://forthebadge.com/images/badges/built-with-love.svg" alt="love">
-  <img src="https://forthebadge.com/images/badges/uses-html.svg" alt="html">
-  <img src="https://forthebadge.com/images/badges/uses-js.svg" alt="css">
-  <img src="https://forthebadge.com/images/badges/60-percent-of-the-time-works-every-time.svg" alt="works">
+  <img src="https://forthebadge.com/images/badges/uses-js.svg" alt="html">
+  <img src="https://forthebadge.com/images/badges/it-works-why.svg" alt="works">
 </p>
 
 <p align="center">
