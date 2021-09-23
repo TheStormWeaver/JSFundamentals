@@ -8,8 +8,8 @@
 </p>
 
 <p align="center">
-<a href="https://softuni.bg/trainings/3133/js-fundamentals-september-2020">
-  <img width="100%" src="https://nakov.com/wp-content/uploads/2012/03/Software-University-logo-horizontal.png" alt="course">
+<a href="https://softuni.bg/">
+  <img width="90%" src="https://nakov.com/wp-content/uploads/2012/03/Software-University-logo-horizontal.png" alt="course">
   </a>
 </p>
 
