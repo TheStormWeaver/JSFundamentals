@@ -34,6 +34,13 @@
 
 - [Fundamentals Basic Overview Link](https://softuni.bg/trainings/3001/fundamentals-with-csharp-java-javascript-and-python-september-2020)
 
+# Certificate
+<p align="center">
+<a href="https://softuni.bg/certificates/certificates/converttoimage/96798?code=6e826ed3">
+  <img width="90%" src="https://softuni.bg/certificates/certificates/converttoimage/96798?code=6e826ed3" alt="certificate">
+  </a>
+</p>
+
 <p align="center">
   <img src="https://img.shields.io/badge/Storm-Weaver-blue" alt="storm" width="10%">
   <img src="https://img.shields.io/badge/Open%20Source-Project-red" alt="project" width="13%">
